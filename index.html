@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto: El Camino del Ninja</title>
+    <style>
+        /* Base y Tipografía (4 líneas) */
+        body { background: #FFFDD0; color: #3A3A3A; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        h1, h2, h3 { color: #D2691E; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+        a { color: #4682B4; text-decoration: none; border-bottom: 1px dotted #4682B4; transition: color 0.3s; }
+
+        /* Header y Navegación (4 líneas) */
+        header { text-align: center; padding-bottom: 30px; border-bottom: 2px solid #D2691E; margin-bottom: 50px; }
+        h1 { font-size: clamp(3rem, 7vw, 5rem); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+        nav a { margin: 0 18px; font-weight: bold; text-transform: uppercase; font-size: 0.95rem; border: none; }
+        nav a:hover { color: #D2691E; }
+
+        /* Sección Héroe/Intro (5 líneas) */
+        .hero-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center; margin-bottom: 80px; }
+        .hero-text p { font-size: 1.15rem; max-width: 60ch; }
+        .hero-image { aspect-ratio: 16/10; overflow: hidden; border-radius: 15px; box-shadow: 5px 5px 15px rgba(0,0,0,0.2); }
+        .hero-image img { width: 100%; height: 100%; object-fit: cover; filter: saturate(1.1) brightness(0.9); transition: filter 0.5s; }
+        .hero-image img:hover { filter: saturate(1.3) brightness(1); }
+
+        /* Sección de Contenido (4 líneas) */
+        .content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 80px; }
+        .card { background: rgba(255, 255, 255, 0.7); padding: 25px; border-radius: 10px; border: 1px solid #e0d9b0; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .section-title { text-align: center; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 60px; text-transform: uppercase; letter-spacing: 1px; color: #4682B4; }
+
+        /* Elementos Adicionales (5 líneas) */
+        .button { display: inline-block; background-color: #D2691E; color: white; padding: 12px 28px; border-radius: 5px; margin-top: 25px; font-weight: bold; text-transform: uppercase; border: none; transition: background-color 0.3s, transform 0.2s; }
+        .button:hover { background-color: #A0522D; transform: scale(1.02); }
+        .highlight { color: #D2691E; font-weight: bold; }
+        footer { text-align: center; margin-top: 100px; padding-top: 40px; border-top: 1px solid #e0d9b0; font-size: 0.85rem; color: #888; }
+        footer span { color: #4682B4; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NARUTO <span class="highlight">SHIPPUDEN.</span></h1>
+            <p>El camino del ninja nunca termina.</p>
+            <nav>
+                <a href="#">Historia</a>
+                <a href="#">Personajes</a>
+                <a href="#">Jutsus</a>
+                <a href="#">Mundo Ninja</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="hero-text">
+                    <h2>Un mundo de <span class="highlight">ninjas y sueños.</span></h2>
+                    <p>Uzumaki Naruto, un joven ninja huérfano y ruidoso, sueña con convertirse en Hokage, el líder de su aldea. A través de desafíos, amistades y batallas épicas, Naruto busca el reconocimiento y la paz, demostrando que nunca debe rendirse a su palabra ninja.</p>
+                    <a href="#" class="button">Descubre Konoha</a>
+                </div>
+                <div class="hero-image">
+                    <img src=C:\Users\Melvin\Pictures\Naruto.jpg">
+                </div>
+            </section>
+
+            <h2 class="section-title">Pilares de <span class="highlight">Konoha.</span></h2>
+            <section class="content-grid">
+                <div class="card">
+                    <h3>Trabajo en Equipo</h3>
+                    <p>La importancia de la cooperación y la confianza entre compañeros ninjas.</p>
+                </div>
+                <div class="card">
+                    <h3>Superación</h3>
+                    <p>Cómo Naruto demuestra que con esfuerzo y determinación se pueden lograr grandes cosas.</p>
+                </div>
+                <div class="card">
+                    <h3>Voluntad de Fuego</h3>
+                    <p>El espíritu que une a la aldea de la Hoja, transmitiendo ideales de generación en generación.</p>
+                </div>
+            </section>
+
+            <section class="hero-section">
+                <div class="hero-image">
+                    <img src="C:\Users\Melvin\Pictures\Narutoprime.jpg">
+                </div>
+                <div class="hero-text">
+                    <h2>La senda del <span class="highlight">Ninja.</span></h2>
+                    <p>Desde los exámenes Chunin hasta la Gran Guerra Ninja, Naruto y sus amigos enfrentan peligros y desarrollan habilidades increíbles. Cada personaje tiene su propia historia de lucha, sacrificio y crecimiento, forjando un legado inolvidable.</p>
+                    <a href="#" class="button">Ver Personajes</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            Creado con el espíritu ninja por <span class="highlight">Melvin</span> &copy; 2026
+        </footer>
+    </div>
+<footer>
+   <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/699b9b8f29aadc1c349e90f3/1ji3tfata';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script--> 
+</footer>
+</body>
+</html>
